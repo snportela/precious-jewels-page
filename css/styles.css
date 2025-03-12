@@ -171,14 +171,15 @@ body {
   position: absolute;
   background: rgba(0, 0, 0, 0.65);
   border-radius: 20px;
-  width: 30%;
-  height: 50%;
+  width: 350px;
+  height: 350px;
   transform: rotate(45deg);
 }
 
 .btn-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 40px;
 }
 
 /* ABOUT */
@@ -206,9 +207,9 @@ body {
 .order-btn {
   margin-top: 30px;
   border: 2px solid var(--dark-blue);
-  border-radius: 20px;
+  border-radius: 15px;
   background-color: var(--dark-blue);
-  padding: 5px;
+  padding: 5px 20px;
   width: fit-content;
   box-shadow: 0 1rem 2.75rem rgba(0, 0, 0, 0.375);
   color: var(--frost);
@@ -216,11 +217,10 @@ body {
 
 .about-btn {
   margin-top: 30px;
-  margin-left: 100px;
   border: 2px solid var(--frost);
-  border-radius: 20px;
+  border-radius: 15px;
   background-color: var(--frost);
-  padding: 5px;
+  padding: 5px 20px;
   width: fit-content;
   box-shadow: 0 1rem 2.75rem rgba(0, 0, 0, 0.375);
   color: var(--dark-blue);
@@ -246,7 +246,7 @@ body {
 }
 
 .custom-video {
-  border-radius: 20px 0 0 20px;
+  border-radius: 20px;
   width: 20vw;
   height: 60vh;
   object-fit: cover;
@@ -618,6 +618,7 @@ body {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  align-items: flex-start
 }
 
 .contact-block {
@@ -625,10 +626,11 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   width: 45%;
+  gap: 20px;
 }
 
 .contact-name {
-  flex: 50%;
+  flex: 100%;
   display: flex;
   flex-direction: column;
   padding-right: 5px;
@@ -647,6 +649,7 @@ body {
 }
 
 .contact-btn {
+  padding-top: 15px;
   flex: 0 0 auto;
   width: 100%;
 }
@@ -654,7 +657,6 @@ body {
 .custom-form .form-control {
   color: white;
   border-radius: 10px;
-  margin-bottom: 30px;
   padding-top: 13px;
   padding-bottom: 13px;
   box-shadow: none;
@@ -672,7 +674,6 @@ body {
   color: white;
   font-style: italic;
   margin-bottom: 5px;
-  padding: 5px;
 }
 
 .custom-form button[type="submit"] {
@@ -795,8 +796,8 @@ footer {
   }
 
   .container-background {
-    height: 30%;
-    width: 40%;
+    height: 250px;
+    width: 250px;
   }
 
   .about-btn {
@@ -816,7 +817,7 @@ footer {
   }
 
   .custom-video {
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
     width: 100%;
   }
 
@@ -917,6 +918,11 @@ footer {
     height: 250px;
   }
 
+  .container-background {
+    width: 250px;
+    height: 250px;
+  }
+
   /* contact */
 
   .map {
@@ -956,7 +962,8 @@ footer {
   /* hero */
 
   .container-background {
-    width: 45%;
+    width: 300px;
+    height: 300px;
   }
 
   /* about */
@@ -986,6 +993,11 @@ footer {
 @media screen and (max-width: 344px) {
   body {
     width: 115%;
+  }
+
+  .container-background {
+    width: 200px;
+    height: 200px;
   }
 }
 
